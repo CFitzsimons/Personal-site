@@ -10,12 +10,11 @@ class MainArea extends Component{
     render(){
         return(
             <Container fluid>
-            <Row>
-                <Col>
-               <Evan/>
-                </Col>
+                <Row>
+                    <Col>
+                    </Col>
                 </Row>
-                </Container>
+            </Container>
         );
     }
 }
