@@ -65,9 +65,9 @@ class App extends Component {
           </Collapse>
         </Navbar> 
 
-        {/* <Route path = "/" component={App}/> */}
-        {/* <Route path = "/cv" component={CV}/> */}
-        {/* <Route path = "/projects"component={Projects}/>   */}
+        <Route path = "/" component={App}/>
+        <Route path = "/cv" component={CV}/>
+        <Route path = "/projects"component={Projects}/>  
     </div>    
     </Router>
     );
