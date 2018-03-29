@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Jumbotron, Media} from 'reactstrap';
 
-class Evan extends Component{
+class evan extends Component{
     render(){
         return(
             <div class = "Jumbotron">
@@ -19,4 +19,4 @@ class Evan extends Component{
     }
 }
 
-export default Evan;
+export default evan;

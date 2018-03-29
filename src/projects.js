@@ -1,11 +1,13 @@
-// ./src/index.jsx
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
 class projects extends Component {
     render(){
-        return (<h1>Hello</h1>);
+        return (
+            <div>
+                <h1>Projects</h1>
+            </div>
+        );
     }
 }
-
-export default projects
+export default projects;
