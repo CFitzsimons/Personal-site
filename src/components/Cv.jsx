@@ -1,8 +1,7 @@
-// ./src/index.jsx
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-class cv extends Component {
+class Cv extends Component {
     render(){
         return (
             <div>
@@ -11,4 +10,4 @@ class cv extends Component {
         );
     }
 }
-export default cv;
+export default Cv;

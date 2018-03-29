@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-class projects extends Component {
+class Projects extends Component {
     render(){
         return (
             <div>
@@ -10,4 +10,4 @@ class projects extends Component {
         );
     }
 }
-export default projects;
+export default Projects;
