@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div>
         <Nav/>
-        {/* <MainArea/> */}
+        <MainArea/>
       </div>
     );
   }

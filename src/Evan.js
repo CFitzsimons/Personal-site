@@ -1,20 +1,20 @@
 import React, {Component} from 'react';
-import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+import {Jumbotron, Media} from 'reactstrap';
 
 class Evan extends Component{
     render(){
         return(
-        <div>
-        <Card>
-            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-            <CardBody>
-            <CardTitle>Evan Power</CardTitle>
-            <CardSubtitle>Software Developer</CardSubtitle>
-            <CardText>Blah </CardText>
-            </CardBody>
-        </Card>
-        </div>
+            <div class = "Jumbotron">
+                <Jumbotron>
+                {/* <Media>
+                    <Media left>
+                    <img src={evan} alt="Evan Power" class="thumbnail"/>
+                    </Media>
+                </Media> */}
+                <h1 class="text-right"> Evan Power</h1>
+                <p className="lead">Software Developer</p>
+                </Jumbotron>
+          </div>
         );
     }
 }
