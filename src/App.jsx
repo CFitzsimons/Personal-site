@@ -10,21 +10,24 @@ import EvanPage from './components/evan'
 import Projects from './components/Projects';
 import Nav from './NavBar';
 
-// const Routes = () => (
-//   <Router>
-//     <Route path = "/" component={App}/>
-//     <Route path = "cv" component={CV}/>
-//     <Route path = "projects" component={Projects}/>
-//   </Router>
-// );
+const Routes = () => (
+  <Router>
+    <div>
+      {/* Previously you had the component here as App, creating a circular reference */}
+      <Route path="/" component={EvanPage}/>
+      <Route path="/cv" component={CV}/>
+      <Route path="/projects" component={Projects}/>
+    </div>
+  </Router>
+);
 class App extends Component {
    render() {
     return (
-      <Router>
-        <div>
-          <Nav/> 
-        </div>
-     </Router>
+      <div>
+        {/* Here we're saying 'always display the nav bar THEN display the router component under it */}
+        <Nav />
+        <Routes />
+      </div>
     
     );
   }

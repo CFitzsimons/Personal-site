@@ -23,29 +23,30 @@ class NavBar extends React.Component {
     render() {
       return (
         <Navbar color = "warning" light>
-        <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-        <NavbarBrand href="/" className="mr-auto">Evan Power</NavbarBrand>
-        <Collapse isOpen={!this.state.collapsed} navbar>
-          <Nav navbar>
-            <NavItem>
-              <RNavLink exact to="/" active >Home</RNavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink><Link to="/cv">CV</Link></NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href ="/projects">Projects</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href ="https://github.com/PowerTaxi">GitHub</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href ="https://linkedin.com/in/evanpower7">LinkedIn</NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar> 
-    );
+          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+          <NavbarBrand href="/" className="mr-auto">Evan Power</NavbarBrand>
+          <Collapse isOpen={!this.state.collapsed} navbar>
+            <Nav navbar>
+              <NavItem>
+                {/* NavLink on its own is sufficent to navigate between pages :) */}
+                <NavLink href="/">Home</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/cv">CV</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/projects">Projects</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href ="https://github.com/PowerTaxi">GitHub</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href ="https://linkedin.com/in/evanpower7">LinkedIn</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar> 
+      );
     }
 }
 export default NavBar
